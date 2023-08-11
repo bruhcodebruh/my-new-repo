@@ -2,7 +2,7 @@ import requests
 import json
 import time
 from datetime import datetime
-
+import os
 def get_candlestick_data(symbol, interval, limit):
     endpoint = "https://api.binance.com/api/v3/klines"
     params = {
